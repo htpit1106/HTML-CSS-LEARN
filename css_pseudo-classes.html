@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> psuedo-classes</title>
+        <meta charset="utf-8">
+        <style>
+            html{
+                background: ('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+                background-repeat: no-repeat;
+                background-size: 100vw 100vh;
+
+            }
+
+            h1::first-letter{
+                font-size: 50px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: red;
+    
+            }
+
+            h1::first-line{
+                color: blue;
+
+            }
+            h1::selection{
+                background-color: violet;
+                color: aqua;
+            }
+            .box{
+                width: 100vw;
+                height: 120px;
+                background-color: #e22bab;        
+            }
+
+            .box:active{
+                background-color: blue;
+            }
+
+            .box::before{
+                content: "Xin chao";
+                color: red;
+                display: block;
+                width: 100px;
+                height: 100px;
+                background-color: white;
+
+            }
+            .box:hover{
+                background-color: aqua;
+
+            }
+
+
+            .box::after{
+                content: "Hello world";
+                color: black;
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"  id="This"></div>
+        <h1>CSS psuedo-classes <br> Dong thu 2</h1>
+        <h3>
+        <ul>
+            <li>:root</li>
+            <!-- hover chi kich hoat ki chi chuot len -->
+            <li>hover</li>
+            <!-- active chi kich hoat khi kich chuot len -->
+            <li>:active</li>
+            <li>:first-child</li>
+            <li>last-child</li>
+        </ul>
+        </h3>
+    </body>
+</html>

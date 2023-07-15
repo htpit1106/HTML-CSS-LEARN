@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table</title>
+        <style>
+            tr:nth-child(even){
+               
+
+                font-size: 12;
+                
+            }
+            tr:hover{
+                background-color: aquamarine;
+            }
+            #first, #seconds {
+                list-style-type: none;
+                margin: 0;
+                overflow: hidden;
+         
+
+            }
+            #first{
+                background-color: #333333;
+            }
+            .menu, .second, a{
+                display: block;
+                padding: 5px;
+
+                color: white;
+                text-decoration: none;
+
+            }
+            .menu .second, a:hover{
+                background-color: blue;
+            }
+
+            .menu{
+                float: left;
+            }
+            .second{
+                background-color: chocolate;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="first">
+            <li class="menu"><a href="#home">Home</a></li>
+            <li class="menu"><a href="#new">New</a></li>
+            <li class="menu"><a href="#contact">Contact</a></li>
+            <li class="menu"><a href="#about">About</a></li>
+
+        </ul>
+        <br>
+        <ul id="seconds">
+            <li class="second"><a href="#space">Space</a></li>
+            <li class="second"><a href="#Upgrade">Upgrade</a></li>
+            <li class="second"><a href="#Newsleter">Newsletter</a></li>
+            <li class="second"><a href="#get">Get Certified</a></li>
+            <li class="second"><a href="Report">Report Error</a></li>
+        </ul>
+        <table style="width: 100%;">
+            <caption>this is a num table</caption>
+            <colgroup>
+                <col span="2" style="background-color: darkcyan;">
+                <!-- bỏ qua 1 cột, dấu 1 cột(1 cột đã bị biến mất) -->
+                <col span="1" style="visibility: collapse;">
+                <col span="2" style="background-color: darkcyan;">
+            </colgroup>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+                        <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+                        <tr>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+        </table>
+        <dl>
+            <dt>For a compliete list of all available HTNl tags</dt>
+                <dd>-<a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_description">HTML tag reference</a></dd>
+        </dl>
+        <ul>
+            <li>H</li>
+            <li>T</li>
+            <li>B</li>
+        </ul>
+        
+    </body>
+</html>

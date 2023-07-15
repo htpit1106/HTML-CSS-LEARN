@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul{
+                list-style-type: none;
+            }
+            li a{
+                display: block;
+                background-color: chocolate;
+                padding: 5px;
+                
+                color: white;
+                font-display: none;
+                text-decoration: none;
+                float: left
+            }
+            li a:hover{
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#new">New</a></li>
+            <li><a href="#new1">Home</a></li>
+            <li><a href="#new2">List</a></li>
+            <li><a href="#new3">About</a></li>
+        </ul>
+        <br>
+        <h2 style="text-align: center;">Multiple Classes</h2>
+        <p>Here, all three h2 elements belong to the "city" class.
+            in addition, London also belongs to the "main" class, which center-aligns the text
+        </p>
+
+        <h2>Use of the class Attribute in JavaScript</h2>
+        <p>Click the button to hide all elements with class name "city"</p>
+        
+        <button onclick="myFunction()">Hide element</button>
+
+        <h2 class="city">London</h2>
+        <p>London is the captial of England</p>
+        <h2 class="city">Paris</h2>
+        <p>Paris is the captial of Fance</p>
+        <h2 class="city">Tokyo</h2>
+        <p>Tokyo is the captial of Japan</p>
+
+        <script>
+        function myFunction(){
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i< x.length; i++)
+                x[i].style.display = "none";
+        }
+        </script>
+        
+        <h2>Using The id Attibute in Javascript</h2>
+        <p>JavaScript can acces an element with a spacified id by using the getElementById() method: </p>
+        <h1 id="myHeader">Hello World!</h1>
+        <button onclick="displayResult()">change text</button>
+
+        <script>
+        function displayResult(){
+            document.getElementById("myHeader").innerHTML = "Have a nice day"
+        
+        }
+        </script>
+
+    
+    
+    </body>
+</html>
