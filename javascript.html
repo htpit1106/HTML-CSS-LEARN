@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="favicon.ico">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+    </head>
+    <body>
+        <h1>My First JavaScritp</h1>
+
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time
+        </button>
+        <br><br>
+        <span id="demo"></span>
+        <script>
+            document.getElementById('demo').innerHTML       = "Displayed screen"
+            document.getElementById('demo').style.fontSize  = "25"
+            document.getElementById('demo').style.color           = "red"
+            document.getElementById('demo').style.backgroundColor = "yellow"
+        </script>
+
+        <h1>My First JavScript</h1>
+        <p>Here, a JavaScript changes the value 9of the src (source) attribute of an image</p>
+        
+        <script>
+        function light(sw){
+            var pic;
+            if (sw == 0)
+                pic = "https://tse1.mm.bing.net/th?id=OIP.tKd0eKSx_ylap1fmnGZUngHaEx&pid=Api&P=0&h=180"
+            else
+                pic = "https://tse3.mm.bing.net/th?id=OIP.3zDOMH-c_oORS9C7D2xe0QHaHa&pid=Api&P=0&h=180"
+            document.getElementById('myImage').src = pic;
+            }
+        </script>
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+        <img id="myImage" src="https://tse1.mm.bing.net/th?id=OIP.tKd0eKSx_ylap1fmnGZUngHaEx&pid=Api&P=0&h=180" width="150" height="180" alt="">
+        <p>
+            <button type="button" onclick="light(1)">Light On</button>
+            <button type="button" onclick="light(0)">Light off</button>
+        </p>
+        <p>Hoang thi phuong</p>
+        <p>baby</p>
+
+
+    </body>
+</html>

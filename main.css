@@ -1,13 +1,16 @@
-:root {
-    --text--color: violet;
+:root{
+    --text-color: red;
 }
-
-html {
-    color: var(--text--color)
+html{
+    /* font-size: 100% tuong duong voi 16px */
+    font-size: 100%; 
 }
-
-
-h1 {
-    --my_color--: green;
-    color: var(--my_color--);
-}
+h1{
+    --my-color: green;
+    color: var(--text-color);
+    color: var(--my-color);
+} 
+/*
+rem : phụ thuộc vào tag html
+em : belong to its before tag
+%: belong to body tag
